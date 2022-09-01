@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	<div class="mx-auto mt-5" style="width: 1000px;">
+		{{ form_start(form) }}
+		{{ form_widget(form) }}
+
+		<button class="btn btn-primary" formnovalidate>
+			Ajouter
+		</button>
+		{{ form_end(form) }}
+	</div>
+
+{% endblock %}
